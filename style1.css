@@ -1,0 +1,90 @@
+center {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.center input[type="checkbox"] {
+  position: relative;
+  display: inline-block;
+  min-height: 50px;
+  width: 50px;
+  background: #ebebeb;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.center input[type="checkbox"]:after { 
+  content: ''; 
+  font-size: 1em;
+  text-align: center;
+  line-height: 30px;
+  color: #555555;
+  position: absolute;
+  margin: auto auto;
+  left: 0; right: 0; bottom: 0; top: 0;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+ }
+
+.center input[type="checkbox"]:before { 
+  position: absolute;
+  margin: auto auto;
+  left: 0; right: 0; bottom: 0; top: 0;
+  content: '';
+  display: block; 
+  height: 20px;
+  width: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.center input[type="checkbox"]:hover:before {
+  height: 20px;
+  width: 20px;
+}
+
+.center input[type="checkbox"]:checked:before {
+  height: 100%;
+  width: 100%;
+  background: #dd3455;
+  border: none;
+  border-radius: 0;
+}
+
+.center input[type="checkbox"]:focus {
+  outline: none;
+}
+
+.center input[type="checkbox"].a:after { content: '1'; } 
+.center input[type="checkbox"].b:after { content: '2'; }
+.center input[type="checkbox"].c:after { content: '3'; }
+.center input[type="checkbox"].d:after { content: '4'; }
+.center input[type="checkbox"].e:after { content: '5'; }
+.center input[type="checkbox"].f:after { content: '6'; }
+.center input[type="checkbox"].g:after { content: '7'; }
+.center input[type="checkbox"].h:after { content: '8'; }
+.center input[type="checkbox"].i:after { content: '9'; }
+.center input[type="checkbox"].j:after { content: '10'; }
+.center input[type="checkbox"].k:after { content: '11'; }
+.center input[type="checkbox"].l:after { content: '12'; }
+
+
+.center input[type="checkbox"]:checked:after { content: '✓'; }
